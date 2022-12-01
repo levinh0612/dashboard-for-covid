@@ -36,8 +36,8 @@ export default function DetailCountry(props) {
       <Dialog open={open} onClose={onClose} >
         <DialogTitle sx={{ fontWeight: 800, fontSize: 25 }}>Thông tin nước {data?.name}: </DialogTitle>
 
-          <img src={data?.flag} style={{ height: '150px' }} alt={data?.name} />
         <Box sx={{ width: 500, padding: 4, display: 'flex', justifyContent: "center", alignItems: "center", flexDirection: "row" }}>
+          <img src={data?.flag} style={{ width: '200px', height: '150px' }} alt={data?.name} />
           <Box sx={{ margin: '0 16px' }}>
             <Typography>
               <strong>Tên nước: </strong>{data?.name}
